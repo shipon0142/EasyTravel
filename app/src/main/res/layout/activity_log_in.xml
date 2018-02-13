@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mycolor"
+
+    tools:context="com.example.shipon.easytravel.LogInActivity">
+    <ImageView
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:src="@drawable/logo"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:gravity="center"
+        android:text="Log In Panel"
+        android:textColor="@android:color/black"
+        android:textSize="25sp"
+        android:textStyle="bold|italic"
+        android:id="@+id/textLogin"/>
+
+    <EditText
+        android:id="@+id/editLEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textLogin"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@drawable/ic_mail_outline_black_24dp"
+        android:drawablePadding="10dp"
+
+        android:hint="Email"
+
+
+        android:textColorHint="#a8a8a8"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/editLPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editLEmail"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:drawableLeft="@drawable/ic_vpn_key_black_24dp"
+        android:drawablePadding="10dp"
+
+        android:hint="Password"
+        android:inputType="textPassword"
+
+        android:textColorHint="#a8a8a8"
+        android:textSize="18sp" />
+
+    <CheckBox
+        android:id="@+id/rCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editLPassword"
+        android:layout_marginLeft="20dp"
+        android:text="Remember me" />
+
+    <Button
+        android:id="@+id/logIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editLPassword"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="28dp"
+        android:gravity="center"
+        android:onClick="LogInn"
+        android:text="Log In"
+        android:background="@drawable/common_google_signin_btn_icon_dark_normal_background"
+        android:backgroundTint="@color/colorPrimary"
+        android:textAllCaps="false"
+        android:textColor="@android:color/black"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+    <TextView
+        android:textSize="18sp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+        android:text="Forgot Password?"
+        android:layout_below="@id/logIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="italic"
+        android:textColor="@android:color/black"
+        android:id="@+id/forgotPassword"
+        />
+    <Button
+        android:textSize="18sp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+        android:text="Not a member? Sign up now"
+        android:layout_below="@id/forgotPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:textAllCaps="false"
+        android:background="@android:color/transparent"
+        android:textColor="@android:color/black"
+        android:onClick="signUpNow"
+        />
+    <ProgressBar
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_alignParentRight="true"
+        android:progressDrawable="@drawable/cast_mini_controller_progress_drawable"
+        android:id="@+id/pb"
+        android:layout_width="30dp"
+        android:layout_height="30dp" >
+    </ProgressBar>
+
+</RelativeLayout>

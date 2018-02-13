@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.shipon.easytravel.EventDetails">
+    <ProgressBar
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/p"
+        android:progressDrawable="@drawable/cast_mini_controller_progress_drawable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/ssphoto"
+                android:layout_width="match_parent"
+                android:layout_height="150dp" />
+
+            <Button
+                android:id="@+id/ssJoinButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/common_google_signin_btn_icon_dark_normal_background"
+                android:backgroundTint="@color/cast_libraries_material_featurehighlight_outer_highlight_default_color"
+                android:onClick="JoinRequest"
+                android:textAllCaps="false" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/sdate"
+                    android:layout_width="100dp"
+                    android:layout_height="80dp"
+                    android:gravity="center"
+                    android:text="JAN 15"
+                    android:textColor="@color/wallet_holo_blue_light"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/sEventName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/sdate"
+                    android:height="40sp"
+                    android:gravity="center|left"
+                    android:text="Cox,s Bazar tour"
+                    android:textColor="@color/cast_expanded_controller_background_color"
+                    android:textSize="25sp"
+                    android:layout_marginLeft="8dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/rDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/sEventName"
+                    android:layout_toRightOf="@+id/sdate"
+                    android:height="40sp"
+                    android:gravity="center|left|top"
+                    android:text="6 days remaining"
+                    android:layout_marginLeft="8dp"
+                    android:textColor="@color/cast_expanded_controller_background_color"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/sl"
+                    android:layout_width="100dp"
+                    android:layout_height="80dp"
+                    android:text="Location:"
+                    android:textColor="@color/cast_expanded_controller_background_color"
+                    android:textSize="20sp"
+                    android:gravity="top|right"/>
+
+                <TextView
+                    android:id="@+id/slName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/sl"
+                    android:height="80sp"
+                    android:gravity="center|left|top"
+                    android:text="Cox,s Bazar"
+                    android:layout_marginLeft="8dp"
+                    android:textColor="@color/cast_expanded_controller_background_color"
+                    android:textSize="20sp" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/em"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:text="Manager:"
+                    android:gravity="top|right"
+                    android:textColor="@color/cast_expanded_controller_background_color"
+                    android:textSize="20sp"
+              />
+
+                <TextView
+                    android:id="@+id/mName"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_toRightOf="@+id/em"
+                    android:text="Shipon Sarder"
+                    android:focusable="true"
+                    android:textColor="@color/cast_expanded_controller_background_color"
+                    android:layout_marginLeft="8dp"
+                    android:textSize="20sp" />
+
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/ecost"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:text="Cost:"
+                    android:textColor="@color/cast_expanded_controller_background_color"
+                    android:textSize="20sp"
+
+                    android:gravity="top|right"/>
+
+                <TextView
+                    android:id="@+id/mNam"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_toRightOf="@+id/ecost"
+                    android:text="500 BDT"
+                    android:textColor="@color/cast_expanded_controller_background_color"
+                    android:layout_marginLeft="8dp"
+                    android:textSize="20sp" />
+
+
+
+            </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/sd"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:text="Details:"
+                    android:textColor="@color/cast_expanded_controller_background_color"
+                    android:textSize="20sp"
+                    android:gravity="top|right"
+                    />
+
+                <TextView
+                    android:id="@+id/idetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/sd"
+                    android:gravity="center|left"
+                    android:text="details t egfssdsdsdsdsdsdddddddddddddddddddddddsddddddddddddddddddddsdddddddddddddddddddddddddddddddddddddddfghfsgdsfgfgjhfsfgxtgfhgdsfdsfgjdfdsgfjdsgkjhjdsbgfjhgd"
+                    android:textColor="@color/cast_expanded_controller_background_color"
+                    android:textSize="20sp"
+
+                    />
+
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+
+
+
+    </ScrollView>
+
+</RelativeLayout>

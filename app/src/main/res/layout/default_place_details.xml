@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/idDefaultPlaceDetails"
+    android:background="@color/mycolor">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="0dp"
+
+            >
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:minHeight="130px">
+
+                <Button
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="3dp"
+                    android:layout_height="58dp"
+                    android:background="#FFFFFF"
+                    android:text="Cox,s Bazar"
+                    android:textColor="#000000"
+                    android:textSize="15sp"
+                    android:textStyle="bold|italic"
+                    android:textAllCaps="false"
+                    android:onClick="placeClick"/>
+
+
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:minHeight="130px">
+                <Button
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="3dp"
+                    android:layout_height="58dp"
+                    android:background="#FFFFFF"
+                    android:text="St. Martins Island"
+                    android:textColor="#000000"
+                    android:textSize="15sp"
+                    android:textStyle="bold|italic"
+                    android:textAllCaps="false"
+                    android:onClick="placeClick"/>
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:minHeight="130px">
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="3dp"
+                    android:layout_height="58dp"
+                    android:background="#FFFFFF"
+                    android:text="Bandarban"
+                    android:textColor="#000000"
+                    android:textSize="15sp"
+                    android:textStyle="bold|italic"
+                    android:textAllCaps="false" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:minHeight="130px">
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="3dp"
+                    android:layout_height="58dp"
+                    android:background="#FFFFFF"
+                    android:text="Rangamati"
+                    android:textColor="#000000"
+                    android:textSize="15sp"
+                    android:textStyle="bold|italic"
+                    android:textAllCaps="false" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:minHeight="130px">
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="3dp"
+                    android:layout_height="58dp"
+                    android:background="#FFFFFF"
+                    android:text="Sajek Vally"
+                    android:textColor="#000000"
+                    android:textSize="15sp"
+                    android:textStyle="bold|italic" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:minHeight="130px">
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="3dp"
+                    android:layout_height="58dp"
+                    android:background="#FFFFFF"
+                    android:text="Sitakundu"
+                    android:textColor="#000000"
+                    android:textSize="15sp"
+                    android:textStyle="bold|italic" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:minHeight="130px">
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="3dp"
+                    android:layout_height="58dp"
+                    android:background="#FFFFFF"
+                    android:text="Moheshkhali Island"
+                    android:textColor="#000000"
+                    android:textSize="15sp"
+                    android:textStyle="bold|italic" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:minHeight="130px">
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="3dp"
+                    android:layout_height="58dp"
+                    android:background="#FFFFFF"
+                    android:text="Teknaf"
+                    android:textColor="#000000"
+                    android:textSize="15sp"
+                    android:textStyle="bold|italic" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:minHeight="130px">
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="3dp"
+                    android:layout_height="58dp"
+                    android:background="#FFFFFF"
+                    android:text="Sundarban"
+                    android:textColor="#000000"
+                    android:textSize="15sp"
+                    android:textStyle="bold|italic" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:minHeight="130px">
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="3dp"
+                    android:layout_height="58dp"
+                    android:background="#FFFFFF"
+                    android:text="Srimongol"
+                    android:textColor="#000000"
+                    android:textSize="15sp"
+                    android:textStyle="bold|italic" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:minHeight="130px">
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="3dp"
+                    android:layout_height="58dp"
+                    android:background="#FFFFFF"
+                    android:text="Madhabkunda Waterfall"
+                    android:textColor="#000000"
+                    android:textSize="15sp"
+                    android:textStyle="bold|italic" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:minHeight="130px">
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="3dp"
+                    android:layout_height="58dp"
+                    android:background="#FFFFFF"
+                    android:text="Jaflong"
+                    android:textColor="#000000"
+                    android:textSize="15sp"
+                    android:textStyle="bold|italic" />
+            </TableRow>
+
+
+
+
+
+
+
+        </TableLayout>
+    </ScrollView>
+
+</RelativeLayout>

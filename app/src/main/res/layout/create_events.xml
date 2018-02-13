@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/idCreateEventsLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTintMode="src_in"
+    android:hapticFeedbackEnabled="false"
+    android:background="@color/mycolor">
+    <ProgressBar
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/pbHeaderProgress"
+        android:progressDrawable="@drawable/cast_mini_controller_progress_drawable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+    </ProgressBar>
+
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/idImageView"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+
+            android:background="@android:color/darker_gray"
+            android:minHeight="120dp"
+            android:maxHeight="120dp"/>
+
+            <Button
+                android:id="@+id/idAddPhoto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+            android:layout_centerHorizontal="true"
+                android:layout_marginTop="80dp"
+                android:text="Add Photo"
+                android:textAllCaps="false"
+                android:drawableLeft="@drawable/ic_photo_library_black_24dp"/>
+
+            <EditText
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:id="@+id/idEventName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/idImageView"
+                android:hint="Event Name"
+                android:minHeight="70dp"
+                android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                android:textSize="25sp" />
+               <LinearLayout
+                   android:layout_marginLeft="10dp"
+                   android:layout_marginRight="10dp"
+                   android:id="@+id/idS"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_below="@+id/idEventName">
+            <ImageView
+                android:id="@+id/idStart"
+                android:minHeight="30dp"
+                android:layout_width="wrap_content"
+                android:minWidth="30dp"
+                android:src="@drawable/ic_access_time_black_24dp"
+                android:layout_height="wrap_content"
+           />
+            <TextView
+                android:id="@+id/idStartDate"
+                   android:textSize="18sp"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/idStart"
+                android:focusable="false"
+                android:longClickable="false"
+                android:text="Jan 11,2018"
+                android:layout_marginLeft="10dp"
+
+                android:onClick="clickDatePick" />
+            <TextView
+                android:id="@+id/idStartTime"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/idStartDate"
+                android:textSize="18sp"
+                android:text="Pick time" />
+               </LinearLayout>
+            <LinearLayout
+
+                android:id="@+id/idE"
+                android:layout_marginLeft="40dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/idS">
+
+            <TextView
+                android:id="@+id/idEnd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                android:textSize="20sp" />
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:id="@+id/idEndDate"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="Pick date" />
+            <TextView
+                android:id="@+id/idEndTime"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+
+                android:textSize="18sp"
+                android:text="Pick time" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:id="@+id/idL"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/idE"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_location_on_black_24dp"
+                android:minWidth="30dp"
+                android:minHeight="30dp"
+                />
+            <TextView
+                android:id="@+id/idPickLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/idE"
+                android:text="Location"
+   android:layout_marginLeft="10dp"
+                android:textSize="20sp"
+                />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:id="@+id/idD"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/idL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minHeight="30dp"
+                    android:minWidth="30dp"
+                    android:paddingTop="12dp"
+                    android:src="@drawable/ic_mode_edit_black_24dp" />
+                <EditText
+                    android:id="@+id/idDetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/idE"
+                    android:hint="Details"
+                    android:layout_marginLeft="10dp"
+
+                    />
+       </LinearLayout>
+            <LinearLayout
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:id="@+id/idC"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/idD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minHeight="30dp"
+                    android:minWidth="30dp"
+                    android:paddingTop="12dp"
+                    android:src="@drawable/ic_attach_money_black_24dp" />
+                <EditText
+                    android:id="@+id/idCost"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/idE"
+                    android:hint="Cost"
+                    android:inputType="number"
+                    android:layout_marginLeft="10dp"
+
+                    />
+            </LinearLayout>
+            <Button
+android:textColor="#FFFFFF"
+                android:id="@+id/idButtonCreateEvent"
+             android:background="@color/colorPrimary"
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Create Event"/>
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

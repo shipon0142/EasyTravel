@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/idAllButtonclick"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.shipon.easytravel.PlaceName"
+    android:background="@color/colorPrimaryDark"
+    >
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="?android:attr/statusBarColor"
+        >
+
+        <TableRow>
+
+            <Button
+                android:layout_width="128dp"
+                android:layout_height="50dp"
+                android:background="#3f51b5"
+                android:text="History"
+                android:textAllCaps="false"
+              android:onClick="clickHistory"  />
+
+            <Button
+                android:layout_width="128dp"
+                android:layout_height="50dp"
+                android:background="#3f51b5"
+                android:text="Hotels"
+                android:textAllCaps="false"
+                />
+
+            <Button
+                android:layout_width="128dp"
+                android:layout_height="match_parent"
+                android:background="#3f51b5"
+                android:text="Upcoming &#xA;Events"
+                android:textAllCaps="false"
+                android:gravity="center"
+
+
+                />
+        </TableRow>
+    </TableLayout>
+
+
+
+
+
+</RelativeLayout>

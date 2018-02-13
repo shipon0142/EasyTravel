@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/idMyaccountL"
+   android:background="@color/mycolor"
+    >
+    <ImageView
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_alignParentRight="true"
+        android:id="@+id/rf"
+        android:src="@drawable/quantum_ic_refresh_white_24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+    <ProgressBar
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:id="@+id/Aid"
+        android:layout_alignParentRight="true"
+        android:layout_width="30dp"
+        android:layout_height="30dp" />
+    <RelativeLayout
+        android:id="@+id/lid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/sdate"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:gravity="center"
+            android:textColor="#272F66"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/sEventName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/sdate"
+            android:height="40sp"
+            android:gravity="center|left"
+            android:textColor="@color/colorPrimary"
+            android:textSize="25sp"
+            android:layout_marginLeft="8dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/rDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sEventName"
+            android:layout_toRightOf="@+id/sdate"
+            android:height="40sp"
+            android:gravity="center|left|top"
+            android:layout_marginLeft="8dp"
+            android:textColor="@color/cast_expanded_controller_background_color"
+            android:textSize="20sp" />
+    </RelativeLayout>
+    <TextView
+       android:background="#272F66"
+        android:id="@+id/noUse"
+        android:layout_below="@+id/lid"
+        android:layout_width="match_parent"
+        android:layout_height="3dp" />
+    <Button
+        android:background="@color/colorPrimary"
+        android:textColor="#FFFFFF"
+        android:text="Delete Event"
+        android:textAllCaps="false"
+        android:id="@+id/idDelete"
+        android:layout_below="@+id/noUse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:background="@color/colorPrimary2"
+        android:textColor="#FFFFFF"
+        android:id="@+id/JoinText"
+        android:layout_below="@+id/idDelete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"/>
+
+
+    <ListView
+        android:layout_below="@id/JoinText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/idRequestView">
+
+    </ListView>
+    <TextView
+        android:background="#272F66"
+        android:id="@+id/nUse"
+        android:layout_below="@+id/idRequestView"
+        android:layout_width="match_parent"
+        android:layout_height="3dp" />
+    <TextView
+        android:background="@color/colorPrimary2"
+        android:textColor="#FFFFFF"
+        android:id="@+id/AcceptText"
+        android:layout_below="@+id/nUse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"/>
+    <ListView
+        android:layout_below="@id/AcceptText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/idAcceptView">
+
+    </ListView>
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

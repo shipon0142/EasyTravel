@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/idMyaccount"
+            android:icon="@drawable/ic_account_box_black_24dp"
+            android:title="My Event" />
+        <item
+            android:id="@+id/idPlace"
+            android:icon="@drawable/ic_place_black_24dp"
+            android:title="Places" />
+        <item
+            android:id="@+id/idEvents"
+            android:icon="@drawable/ic_event_note_black_24dp"
+            android:title="Events" />
+        <item
+            android:id="@+id/idcreateEvent"
+            android:icon="@drawable/ic_event_black_24dp"
+            android:title="Create Event" />
+        <item
+            android:id="@+id/idSetting"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Settings" />
+        <item
+            android:id="@+id/idSignout"
+            android:icon="@drawable/ic_arrow_downward_black_24dp"
+            android:title="Sign Out" />
+    </group>
+
+
+
+</menu>

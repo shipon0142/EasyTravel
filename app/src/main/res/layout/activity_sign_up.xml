@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mycolor"
+    tools:context="com.example.shipon.easytravel.SignUpActivity">
+    <ProgressBar
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_alignParentRight="true"
+        android:progressDrawable="@drawable/cast_mini_controller_progress_drawable"
+        android:id="@+id/pbb"
+        android:layout_width="30dp"
+        android:layout_height="30dp" >
+    </ProgressBar>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        android:gravity="center"
+        android:text="SignUp"
+        android:textColor="@android:color/black"
+        android:textSize="25sp"
+        android:textStyle="bold|italic"
+        android:id="@+id/textSignup"/>
+     <EditText
+        android:id="@+id/editName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textSignup"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@drawable/ic_perm_identity_black_24dp"
+        android:drawablePadding="10dp"
+        android:hint="Name"
+
+        android:textColorHint="#a8a8a8"
+        android:textSize="12sp" />
+
+    <EditText
+        android:id="@+id/editEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editName"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:drawableLeft="@drawable/ic_mail_outline_black_24dp"
+        android:drawablePadding="10dp"
+
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+
+        android:textColorHint="#a8a8a8"
+        android:textSize="12sp" />
+
+    <EditText
+        android:id="@+id/editContact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editEmail"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:drawableLeft="@drawable/ic_call_black_24dp"
+        android:drawablePadding="10dp"
+        android:hint="Contact"
+
+        android:inputType="phone"
+
+        android:textColorHint="#a8a8a8"
+        android:textSize="12sp" />
+
+    <EditText
+        android:id="@+id/editUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editContact"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:drawableLeft="@drawable/ic_perm_identity_black_24dp"
+        android:drawablePadding="10dp"
+
+
+        android:hint="Username"
+
+        android:textColorHint="#a8a8a8"
+        android:textSize="12sp" />
+
+    <EditText
+        android:id="@+id/editPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editUsername"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:drawableLeft="@drawable/ic_vpn_key_black_24dp"
+        android:drawablePadding="10dp"
+        android:hint="Password"
+
+        android:inputType="textPassword"
+
+        android:textColorHint="#a8a8a8"
+        android:textSize="12sp" />
+
+    <EditText
+        android:id="@+id/editCPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editPassword"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:drawableLeft="@drawable/ic_vpn_key_black_24dp"
+        android:drawablePadding="10dp"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:textColorHint="#a8a8a8"
+        android:textSize="12sp" />
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editCPassword"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Male"
+            android:textSize="15sp"
+            android:textColor="@color/common_google_signin_btn_text_dark_default"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fimale"
+            android:textSize="15sp"
+            android:textColor="@color/common_google_signin_btn_text_dark_default"/>
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/signup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/radioGroup"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/common_google_signin_btn_icon_dark_normal_background"
+        android:backgroundTint="@color/cast_libraries_material_featurehighlight_outer_highlight_default_color"
+        android:onClick="signup"
+        android:text="Sign Up"
+        android:textAllCaps="false"
+        android:textSize="15sp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Already have an id? LogIn Now"
+        android:layout_below="@id/signup"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:textSize="15sp"
+        android:id="@+id/no"
+        android:onClick="logInNow"/>
+
+
+
+</RelativeLayout>
